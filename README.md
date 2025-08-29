@@ -13,7 +13,7 @@ B) For time-series analysis and identifying seasonality.
 C) To measure growth or decline over specific periods.
 #### 🚩Formula Used: ∑[Measure] by [Date Dimension]
 #### 🔍SQL Task: Analyse Sales performance over time.
-Query Link:[View Link](1.Change_over_time_analysis.sql)
+[Query Link](1.Change_over_time_analysis.sql)
 ## 2] Cumulative Analysis
 #### 🎯Purpose:
 A) To calculate running totals or moving averages for key metrics.
