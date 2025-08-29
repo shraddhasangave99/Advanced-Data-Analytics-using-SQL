@@ -21,6 +21,7 @@ A) To calculate running totals or moving averages for key metrics.
 B) To track performance over time cumulatively.
  
 C) Useful for growth analysis or identifying long-term trends.
+[Query Link](2.Cumulative_analysis.sql)
 #### 🚩Formula Used: ∑[Cumulative Measure] by [Date Dimension]
 #### 🔍SQL Task: Calculate the total sales per month and the running total of sales over time.
 
@@ -31,6 +32,7 @@ A) To measure the performance of products, customers, or regions over time.
 B) For benchmarking and identifying high-performing entities.
  
 C) To track yearly trends and growth.
+[Query Link](3.Performance_analysis.sql)
 #### 🚩Formula Used: Current[Measure]-Target[Date Dimension]
 #### 🔍SQL Task: Analyse yearly performance of products by comparing each product's sales to both avg sales performance and the previous year's sales.
 
@@ -41,6 +43,7 @@ A) To compare performance or metrics across dimensions or time periods.
 B) To evaluate differences between categories.
  
 C) Useful for A/B testing or regional comparisons.
+[Query Link](4.Part_to_whole_analysis.sql)
 #### 🚩Formula Used: ([Measure]/Total[Measure])*100 by [Dimension]
 #### 🔍SQL Task: Which categories contribute the most to overall sales?
 
@@ -51,7 +54,7 @@ A) To group data into meaningful categories for targeted insights.
 B) For customer segmentation, product categorization, or regional analysis.
 #### 🚩Formula Used: [Measure] by [Measure]
 #### 🔍SQL Task: Segment products into cost ranges and count how many products fall into each segment?
-
+[Query Link](5.Data_segmentation.sql)
 ## 6] Customer Report
 #### 🎯Purpose:
 A) This report consolidates key customer metrics and behaviors.
@@ -69,7 +72,7 @@ A) This report consolidates key customer metrics and behaviors.
 	    recency (months since last order)
 		- average order value
 		- average monthly spend
-   
+[Query Link](6.Report_customers.sql)
 ## 7] Product Report
 #### 🎯Purpose:
 A) This report consolidates key product metrics and behaviors.
@@ -79,3 +82,4 @@ A) This report consolidates key product metrics and behaviors.
  2. Segments products by revenue to identify High-Performers, Mid-Range, or Low-Performers.
  3. Aggregates product-level metrics: total orders - total sales - total quantity sold - total customers (unique) - lifespan (in months)
  4. Calculates valuable KPIs: recency (months since last sale)  - average order revenue (AOR) - average monthly revenue
+[Query Link](7.Report_products.sql)
