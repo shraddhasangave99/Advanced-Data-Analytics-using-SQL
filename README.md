@@ -6,18 +6,76 @@ This repository offers a well-structured collection of SQL scripts tailored for 
 
 ## 1] Change over Time (Trends) Analysis
 #### 🎯Purpose:
-      A. To track trends, growth, and changes in key metrics over time.
-      B. For time-series analysis and identifying seasonality.
-      C. To measure growth or decline over specific periods.
-##### 🚩Formula Used: ∑[Measure] by [Date Dimension]
-##### 🔍SQL Task: Analyse Sales performance over time.
+A) To track trends, growth, and changes in key metrics over time.
+ 
+B) For time-series analysis and identifying seasonality.
+ 
+C) To measure growth or decline over specific periods.
+#### 🚩Formula Used: ∑[Measure] by [Date Dimension]
+#### 🔍SQL Task: Analyse Sales performance over time.
 
 ## 2] Cumulative Analysis
-   Aggregates the data progressively over time. It helps to understand whether our business is growing or declining. We can track performance over time cumulatively. Used Aggregrate and Window functions.
-##### 🚩Formula Used: ∑[Cumulative Measure] by [Date Dimension]
-##### 🔍SQL Task: Calculate the total sales per month and the running total of sales over time.
+#### 🎯Purpose:
+A) To calculate running totals or moving averages for key metrics.
+ 
+B) To track performance over time cumulatively.
+ 
+C) Useful for growth analysis or identifying long-term trends.
+#### 🚩Formula Used: ∑[Cumulative Measure] by [Date Dimension]
+#### 🔍SQL Task: Calculate the total sales per month and the running total of sales over time.
 
 ## 3] Performance Analysis
-   Aggregates the data progressively over time. It helps to understand whether our business is growing or declining. We can track performance over time cumulatively. Used Aggregrate and Window functions.
-##### 🚩Formula Used: ∑[Cumulative Measure] by [Date Dimension]
-##### 🔍SQL Task: Calculate the total sales per month and the running total of sales over time.
+#### 🎯Purpose:
+A) To measure the performance of products, customers, or regions over time.
+ 
+B) For benchmarking and identifying high-performing entities.
+ 
+C) To track yearly trends and growth.
+#### 🚩Formula Used: Current[Measure]-Target[Date Dimension]
+#### 🔍SQL Task: Analyse yearly performance of products by comparing each product's sales to both avg sales performance and the previous year's sales.
+
+## 4] Part-to-Whole (Proportional) Analysis
+#### 🎯Purpose:
+A) To compare performance or metrics across dimensions or time periods.
+ 
+B) To evaluate differences between categories.
+ 
+C) Useful for A/B testing or regional comparisons.
+#### 🚩Formula Used: ([Measure]/Total[Measure])*100 by [Dimension]
+#### 🔍SQL Task: Which categories contribute the most to overall sales?
+
+## 5] Data Segmentation Analysis
+#### 🎯Purpose:
+A) To group data into meaningful categories for targeted insights.
+ 
+B) For customer segmentation, product categorization, or regional analysis.
+#### 🚩Formula Used: [Measure] by [Measure]
+#### 🔍SQL Task: Segment products into cost ranges and count how many products fall into each segment?
+
+## 6] Customer Report
+#### 🎯Purpose:
+A) This report consolidates key customer metrics and behaviors.
+
+#### 🔍SQL Task:  
+1. Gathers essential fields such as names, ages, and transaction details.
+2. Segments customers into categories (VIP, Regular, New) and age groups.
+3. Aggregates customer-level metrics:
+	total orders
+	   - total sales
+	   - total quantity purchased
+	   - total products
+	   - lifespan (in months)
+4. Calculates valuable KPIs:
+	    recency (months since last order)
+		- average order value
+		- average monthly spend
+   
+## 7] Product Report
+#### 🎯Purpose:
+A) This report consolidates key product metrics and behaviors.
+
+#### 🔍SQL Task:  
+ 1. Gathers essential fields such as product name, category, subcategory, and cost.
+ 2. Segments products by revenue to identify High-Performers, Mid-Range, or Low-Performers.
+ 3. Aggregates product-level metrics: total orders - total sales - total quantity sold - total customers (unique) - lifespan (in months)
+ 4. Calculates valuable KPIs: recency (months since last sale)  - average order revenue (AOR) - average monthly revenue
