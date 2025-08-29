@@ -70,6 +70,7 @@ A) This report consolidates key customer metrics and behaviors.
 	    recency (months since last order)
 		- average order value
 		- average monthly spend
+   
 [Query Link](6.Report_customers.sql)
 ## 7] Product Report
 #### 🎯Purpose:
@@ -80,4 +81,5 @@ A) This report consolidates key product metrics and behaviors.
  2. Segments products by revenue to identify High-Performers, Mid-Range, or Low-Performers.
  3. Aggregates product-level metrics: total orders - total sales - total quantity sold - total customers (unique) - lifespan (in months)
  4. Calculates valuable KPIs: recency (months since last sale)  - average order revenue (AOR) - average monthly revenue
+    
 [Query Link](7.Report_products.sql)
